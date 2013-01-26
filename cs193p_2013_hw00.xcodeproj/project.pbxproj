@@ -83,8 +83,6 @@
 		D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw00 */ = {
 			isa = PBXGroup;
 			children = (
-				D2E0B58316B2EAF10024A566 /* AppDelegate.h */,
-				D2E0B58416B2EAF10024A566 /* AppDelegate.m */,
 				D2E0B58C16B2EAF10024A566 /* MainStoryboard.storyboard */,
 				D2E0B58F16B2EAF10024A566 /* ViewController.h */,
 				D2E0B59016B2EAF10024A566 /* ViewController.m */,
@@ -96,6 +94,8 @@
 		D2E0B57B16B2EAF10024A566 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2E0B58316B2EAF10024A566 /* AppDelegate.h */,
+				D2E0B58416B2EAF10024A566 /* AppDelegate.m */,
 				D2E0B57C16B2EAF10024A566 /* cs193p_2013_hw00-Info.plist */,
 				D2E0B57D16B2EAF10024A566 /* InfoPlist.strings */,
 				D2E0B58016B2EAF10024A566 /* main.m */,
@@ -257,6 +257,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
 				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
 				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -9,21 +9,21 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *pocetOtoceniPopisok;
+@property (nonatomic) int pocetOtoceni;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)otocKartu:(UIButton *)sender {
+  sender.selected = !sender.isSelected;
+  self.pocetOtoceni++;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setPocetOtoceni:(int)pocetOtoceni {
+  _pocetOtoceni = pocetOtoceni;
+  self.pocetOtoceniPopisok.text = [NSString stringWithFormat:@"Pocet otoceni: %d",self.pocetOtoceni];
 }
 
 @end
