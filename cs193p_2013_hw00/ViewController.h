@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BalicekHracichKariet.h"
+#import "HraciaKarta.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+
+    BalicekHracichKariet *balicek;
+
+}
 
 @end

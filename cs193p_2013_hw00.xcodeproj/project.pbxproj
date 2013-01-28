@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D203237216B6A94E00751384 /* BalicekKariet.m in Sources */ = {isa = PBXBuildFile; fileRef = D203237116B6A94E00751384 /* BalicekKariet.m */; };
+		D203237516B6AA7000751384 /* Karta.m in Sources */ = {isa = PBXBuildFile; fileRef = D203237416B6AA7000751384 /* Karta.m */; };
+		D203237816B6AA8500751384 /* HraciaKarta.m in Sources */ = {isa = PBXBuildFile; fileRef = D203237716B6AA8500751384 /* HraciaKarta.m */; };
+		D203237B16B6AB1500751384 /* BalicekHracichKariet.m in Sources */ = {isa = PBXBuildFile; fileRef = D203237A16B6AB1500751384 /* BalicekHracichKariet.m */; };
 		D2E0B57516B2EAF10024A566 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B57416B2EAF10024A566 /* UIKit.framework */; };
 		D2E0B57716B2EAF10024A566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B57616B2EAF10024A566 /* Foundation.framework */; };
 		D2E0B57916B2EAF10024A566 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B57816B2EAF10024A566 /* CoreGraphics.framework */; };
@@ -21,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D203237016B6A94E00751384 /* BalicekKariet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalicekKariet.h; sourceTree = "<group>"; };
+		D203237116B6A94E00751384 /* BalicekKariet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalicekKariet.m; sourceTree = "<group>"; };
+		D203237316B6AA7000751384 /* Karta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Karta.h; sourceTree = "<group>"; };
+		D203237416B6AA7000751384 /* Karta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Karta.m; sourceTree = "<group>"; };
+		D203237616B6AA8500751384 /* HraciaKarta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HraciaKarta.h; sourceTree = "<group>"; };
+		D203237716B6AA8500751384 /* HraciaKarta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HraciaKarta.m; sourceTree = "<group>"; };
+		D203237916B6AB1500751384 /* BalicekHracichKariet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalicekHracichKariet.h; sourceTree = "<group>"; };
+		D203237A16B6AB1500751384 /* BalicekHracichKariet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalicekHracichKariet.m; sourceTree = "<group>"; };
 		D2E0B57016B2EAF10024A566 /* cs193p_2013_hw00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs193p_2013_hw00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B57416B2EAF10024A566 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2E0B57616B2EAF10024A566 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +65,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D203236C16B6A85400751384 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D203237616B6AA8500751384 /* HraciaKarta.h */,
+				D203237716B6AA8500751384 /* HraciaKarta.m */,
+				D203237316B6AA7000751384 /* Karta.h */,
+				D203237416B6AA7000751384 /* Karta.m */,
+				D203237916B6AB1500751384 /* BalicekHracichKariet.h */,
+				D203237A16B6AB1500751384 /* BalicekHracichKariet.m */,
+				D203237016B6A94E00751384 /* BalicekKariet.h */,
+				D203237116B6A94E00751384 /* BalicekKariet.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D203236E16B6A85D00751384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B58C16B2EAF10024A566 /* MainStoryboard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D203236F16B6A86B00751384 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B58F16B2EAF10024A566 /* ViewController.h */,
+				D2E0B59016B2EAF10024A566 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		D2E0B56516B2EAF10024A566 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +127,9 @@
 		D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw00 */ = {
 			isa = PBXGroup;
 			children = (
-				D2E0B58C16B2EAF10024A566 /* MainStoryboard.storyboard */,
-				D2E0B58F16B2EAF10024A566 /* ViewController.h */,
-				D2E0B59016B2EAF10024A566 /* ViewController.m */,
+				D203236F16B6A86B00751384 /* Controllers */,
+				D203236E16B6A85D00751384 /* Views */,
+				D203236C16B6A85400751384 /* Models */,
 				D2E0B57B16B2EAF10024A566 /* Supporting Files */,
 			);
 			path = cs193p_2013_hw00;
@@ -176,6 +220,10 @@
 				D2E0B58116B2EAF10024A566 /* main.m in Sources */,
 				D2E0B58516B2EAF10024A566 /* AppDelegate.m in Sources */,
 				D2E0B59116B2EAF10024A566 /* ViewController.m in Sources */,
+				D203237216B6A94E00751384 /* BalicekKariet.m in Sources */,
+				D203237516B6AA7000751384 /* Karta.m in Sources */,
+				D203237816B6AA8500751384 /* HraciaKarta.m in Sources */,
+				D203237B16B6AB1500751384 /* BalicekHracichKariet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +302,7 @@
 		D2E0B59516B2EAF10024A566 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
 				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
@@ -266,6 +315,7 @@
 		D2E0B59616B2EAF10024A566 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
 				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
@@ -294,6 +344,7 @@
 				D2E0B59616B2EAF10024A566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

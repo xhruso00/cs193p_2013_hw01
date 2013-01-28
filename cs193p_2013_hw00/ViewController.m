@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *pocetOtoceniPopisok;
 @property (nonatomic) int pocetOtoceni;
@@ -16,14 +17,24 @@
 
 @implementation ViewController
 
+- (void)awakeFromNib {
+    balicek = [[BalicekHracichKariet alloc] init];
+}
+
 - (IBAction)otocKartu:(UIButton *)sender {
-  sender.selected = !sender.isSelected;
-  self.pocetOtoceni++;
+    if(!sender.isSelected) {
+        Karta *tahanaKarta;
+        tahanaKarta = [balicek potiahniNahodnuKartu];
+        [sender setTitle:tahanaKarta.obsah forState:UIControlStateSelected];
+    }
+    sender.selected = !sender.isSelected;
+    self.pocetOtoceni++;
 }
 
 -(void)setPocetOtoceni:(int)pocetOtoceni {
-  _pocetOtoceni = pocetOtoceni;
-  self.pocetOtoceniPopisok.text = [NSString stringWithFormat:@"Pocet otoceni: %d",self.pocetOtoceni];
+    _pocetOtoceni = pocetOtoceni;
+    self.pocetOtoceniPopisok.text = [NSString stringWithFormat:@"Pocet otoceni: %d",self.pocetOtoceni];
 }
+
 
 @end
