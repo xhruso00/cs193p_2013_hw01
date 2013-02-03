@@ -33,14 +33,14 @@
 		D203237716B6AA8500751384 /* HraciaKarta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HraciaKarta.m; sourceTree = "<group>"; };
 		D203237916B6AB1500751384 /* BalicekHracichKariet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalicekHracichKariet.h; sourceTree = "<group>"; };
 		D203237A16B6AB1500751384 /* BalicekHracichKariet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalicekHracichKariet.m; sourceTree = "<group>"; };
-		D2E0B57016B2EAF10024A566 /* cs193p_2013_hw00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs193p_2013_hw00.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E0B57016B2EAF10024A566 /* cs193p_2013_hw01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs193p_2013_hw01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B57416B2EAF10024A566 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2E0B57616B2EAF10024A566 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2E0B57816B2EAF10024A566 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D2E0B57C16B2EAF10024A566 /* cs193p_2013_hw00-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cs193p_2013_hw00-Info.plist"; sourceTree = "<group>"; };
+		D2E0B57C16B2EAF10024A566 /* cs193p_2013_hw01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cs193p_2013_hw01-Info.plist"; sourceTree = "<group>"; };
 		D2E0B57E16B2EAF10024A566 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D2E0B58016B2EAF10024A566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D2E0B58216B2EAF10024A566 /* cs193p_2013_hw00-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cs193p_2013_hw00-Prefix.pch"; sourceTree = "<group>"; };
+		D2E0B58216B2EAF10024A566 /* cs193p_2013_hw01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cs193p_2013_hw01-Prefix.pch"; sourceTree = "<group>"; };
 		D2E0B58316B2EAF10024A566 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2E0B58416B2EAF10024A566 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2E0B58616B2EAF10024A566 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		D2E0B56516B2EAF10024A566 = {
 			isa = PBXGroup;
 			children = (
-				D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw00 */,
+				D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw01 */,
 				D2E0B57316B2EAF10024A566 /* Frameworks */,
 				D2E0B57116B2EAF10024A566 /* Products */,
 			);
@@ -109,7 +109,7 @@
 		D2E0B57116B2EAF10024A566 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2E0B57016B2EAF10024A566 /* cs193p_2013_hw00.app */,
+				D2E0B57016B2EAF10024A566 /* cs193p_2013_hw01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw00 */ = {
+		D2E0B57A16B2EAF10024A566 /* cs193p_2013_hw01 */ = {
 			isa = PBXGroup;
 			children = (
 				D203236F16B6A86B00751384 /* Controllers */,
@@ -132,7 +132,8 @@
 				D203236C16B6A85400751384 /* Models */,
 				D2E0B57B16B2EAF10024A566 /* Supporting Files */,
 			);
-			path = cs193p_2013_hw00;
+			name = cs193p_2013_hw01;
+			path = cs193p_2013_hw01;
 			sourceTree = "<group>";
 		};
 		D2E0B57B16B2EAF10024A566 /* Supporting Files */ = {
@@ -140,10 +141,10 @@
 			children = (
 				D2E0B58316B2EAF10024A566 /* AppDelegate.h */,
 				D2E0B58416B2EAF10024A566 /* AppDelegate.m */,
-				D2E0B57C16B2EAF10024A566 /* cs193p_2013_hw00-Info.plist */,
+				D2E0B57C16B2EAF10024A566 /* cs193p_2013_hw01-Info.plist */,
 				D2E0B57D16B2EAF10024A566 /* InfoPlist.strings */,
 				D2E0B58016B2EAF10024A566 /* main.m */,
-				D2E0B58216B2EAF10024A566 /* cs193p_2013_hw00-Prefix.pch */,
+				D2E0B58216B2EAF10024A566 /* cs193p_2013_hw01-Prefix.pch */,
 				D2E0B58616B2EAF10024A566 /* Default.png */,
 				D2E0B58816B2EAF10024A566 /* Default@2x.png */,
 				D2E0B58A16B2EAF10024A566 /* Default-568h@2x.png */,
@@ -154,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2E0B56F16B2EAF10024A566 /* cs193p_2013_hw00 */ = {
+		D2E0B56F16B2EAF10024A566 /* cs193p_2013_hw01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2E0B59416B2EAF10024A566 /* Build configuration list for PBXNativeTarget "cs193p_2013_hw00" */;
+			buildConfigurationList = D2E0B59416B2EAF10024A566 /* Build configuration list for PBXNativeTarget "cs193p_2013_hw01" */;
 			buildPhases = (
 				D2E0B56C16B2EAF10024A566 /* Sources */,
 				D2E0B56D16B2EAF10024A566 /* Frameworks */,
@@ -166,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = cs193p_2013_hw00;
-			productName = cs193p_2013_hw00;
-			productReference = D2E0B57016B2EAF10024A566 /* cs193p_2013_hw00.app */;
+			name = cs193p_2013_hw01;
+			productName = cs193p_2013_hw01;
+			productReference = D2E0B57016B2EAF10024A566 /* cs193p_2013_hw01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +181,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Marek Hrušovský";
 			};
-			buildConfigurationList = D2E0B56A16B2EAF10024A566 /* Build configuration list for PBXProject "cs193p_2013_hw00" */;
+			buildConfigurationList = D2E0B56A16B2EAF10024A566 /* Build configuration list for PBXProject "cs193p_2013_hw01" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,7 +193,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2E0B56F16B2EAF10024A566 /* cs193p_2013_hw00 */,
+				D2E0B56F16B2EAF10024A566 /* cs193p_2013_hw01 */,
 			);
 		};
 /* End PBXProject section */
@@ -304,10 +305,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
-				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
+				GCC_PREFIX_HEADER = "cs193p_2013_hw01/cs193p_2013_hw01-Prefix.pch";
+				INFOPLIST_FILE = "cs193p_2013_hw01/cs193p_2013_hw01-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cs193p_2013_hw01;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -317,10 +318,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cs193p_2013_hw00/cs193p_2013_hw00-Prefix.pch";
-				INFOPLIST_FILE = "cs193p_2013_hw00/cs193p_2013_hw00-Info.plist";
+				GCC_PREFIX_HEADER = "cs193p_2013_hw01/cs193p_2013_hw01-Prefix.pch";
+				INFOPLIST_FILE = "cs193p_2013_hw01/cs193p_2013_hw01-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cs193p_2013_hw01;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -328,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2E0B56A16B2EAF10024A566 /* Build configuration list for PBXProject "cs193p_2013_hw00" */ = {
+		D2E0B56A16B2EAF10024A566 /* Build configuration list for PBXProject "cs193p_2013_hw01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2E0B59216B2EAF10024A566 /* Debug */,
@@ -337,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2E0B59416B2EAF10024A566 /* Build configuration list for PBXNativeTarget "cs193p_2013_hw00" */ = {
+		D2E0B59416B2EAF10024A566 /* Build configuration list for PBXNativeTarget "cs193p_2013_hw01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2E0B59516B2EAF10024A566 /* Debug */,
