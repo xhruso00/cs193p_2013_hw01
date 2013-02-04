@@ -40,7 +40,18 @@
         else if (inaKarta.hodnota == self.hodnota)
             skore = 4;
     }
-        
+    
+    if ([ineKarty count] == 2) {
+        HraciaKarta *inaKarta1 = ineKarty[0];
+        HraciaKarta *inaKarta2 = ineKarty[1];
+        if ([inaKarta1.farba isEqualToString:self.farba] &&
+            [inaKarta2.farba isEqualToString:self.farba])
+            skore = 3;
+        else if (inaKarta1.hodnota == self.hodnota &&
+                 inaKarta2.hodnota == self.hodnota)
+            skore = 6;
+    }
+    
     return skore;
 }
 

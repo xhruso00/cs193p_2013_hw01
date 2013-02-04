@@ -16,10 +16,15 @@
 @property (strong,nonatomic) PorovnavaciaKartovaHra *hra;
 @property (weak, nonatomic) IBOutlet UILabel *skorePopisok;
 @property (weak, nonatomic) IBOutlet UILabel *poslednyTahPopisok;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *pocetHladanychZhod;
 
 @end
 
 @implementation ViewController
+
+- (IBAction)zmenPocetHladanychKariet:(UISegmentedControl *)sender {
+    self.hra.pocetKarietNaZhodu = sender.selectedSegmentIndex + 2;
+}
 
 - (IBAction)novaHra:(UIButton *)sender {
     self.skorePopisok.text = @"Skore: 0";
@@ -31,6 +36,7 @@
         tlacitko.alpha = 1.0;
         tlacitko.selected = NO;
     }
+    self.pocetHladanychZhod.enabled = YES;
     _hra = nil;
     [self obnovUI];
 }
@@ -51,6 +57,8 @@
         tlacitko.alpha = (karta.nehratelna ? 0.3 : 1.0);
         self.poslednyTahPopisok.text = self.hra.vysledokPoslednehoOtocenia;
     }
+    if(self.pocetOtoceni)
+        self.pocetHladanychZhod.enabled = NO;
 }
 
 - (void)setTlacitkaKariet:(NSArray *)tlacitkaKariet {
