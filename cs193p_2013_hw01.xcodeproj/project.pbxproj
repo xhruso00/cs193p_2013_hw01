@@ -22,6 +22,8 @@
 		D2E0B58B16B2EAF10024A566 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E0B58A16B2EAF10024A566 /* Default-568h@2x.png */; };
 		D2E0B58E16B2EAF10024A566 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E0B58C16B2EAF10024A566 /* MainStoryboard.storyboard */; };
 		D2E0B59116B2EAF10024A566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B59016B2EAF10024A566 /* ViewController.m */; };
+		D2FEF2BC16BFDAD80063E56F /* backFace.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FEF2BB16BFDAD80063E56F /* backFace.png */; };
+		D2FEF2BF16BFDE450063E56F /* PorovnavaciaKartovaHra.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF2BE16BFDE450063E56F /* PorovnavaciaKartovaHra.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		D2E0B58D16B2EAF10024A566 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D2E0B58F16B2EAF10024A566 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D2E0B59016B2EAF10024A566 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2FEF2BB16BFDAD80063E56F /* backFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backFace.png; sourceTree = "<group>"; };
+		D2FEF2BD16BFDE450063E56F /* PorovnavaciaKartovaHra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PorovnavaciaKartovaHra.h; sourceTree = "<group>"; };
+		D2FEF2BE16BFDE450063E56F /* PorovnavaciaKartovaHra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PorovnavaciaKartovaHra.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,8 @@
 		D203236C16B6A85400751384 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D2FEF2BD16BFDE450063E56F /* PorovnavaciaKartovaHra.h */,
+				D2FEF2BE16BFDE450063E56F /* PorovnavaciaKartovaHra.m */,
 				D203237616B6AA8500751384 /* HraciaKarta.h */,
 				D203237716B6AA8500751384 /* HraciaKarta.m */,
 				D203237316B6AA7000751384 /* Karta.h */,
@@ -132,7 +139,6 @@
 				D203236C16B6A85400751384 /* Models */,
 				D2E0B57B16B2EAF10024A566 /* Supporting Files */,
 			);
-			name = cs193p_2013_hw01;
 			path = cs193p_2013_hw01;
 			sourceTree = "<group>";
 		};
@@ -148,6 +154,7 @@
 				D2E0B58616B2EAF10024A566 /* Default.png */,
 				D2E0B58816B2EAF10024A566 /* Default@2x.png */,
 				D2E0B58A16B2EAF10024A566 /* Default-568h@2x.png */,
+				D2FEF2BB16BFDAD80063E56F /* backFace.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 				D2E0B58916B2EAF10024A566 /* Default@2x.png in Resources */,
 				D2E0B58B16B2EAF10024A566 /* Default-568h@2x.png in Resources */,
 				D2E0B58E16B2EAF10024A566 /* MainStoryboard.storyboard in Resources */,
+				D2FEF2BC16BFDAD80063E56F /* backFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +233,7 @@
 				D203237516B6AA7000751384 /* Karta.m in Sources */,
 				D203237816B6AA8500751384 /* HraciaKarta.m in Sources */,
 				D203237B16B6AB1500751384 /* BalicekHracichKariet.m in Sources */,
+				D2FEF2BF16BFDE450063E56F /* PorovnavaciaKartovaHra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
                 HraciaKarta *karta = [[HraciaKarta alloc] init];
                 karta.hodnota = hodnota;
                 karta.farba = farba;
-                karta.hratelna = YES;
+                karta.nehratelna = NO;
                 karta.otocenaCelnouStranou = NO;
                 [self pridajKartu:karta naVrch:YES];
             }

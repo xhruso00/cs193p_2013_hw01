@@ -12,23 +12,40 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *pocetOtoceniPopisok;
 @property (nonatomic) int pocetOtoceni;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tlacitkaKariet;
+@property (strong,nonatomic) PorovnavaciaKartovaHra *hra;
 
 @end
 
 @implementation ViewController
 
-- (void)awakeFromNib {
-    balicek = [[BalicekHracichKariet alloc] init];
+- (PorovnavaciaKartovaHra *)hra {
+    if(!_hra) _hra = [[PorovnavaciaKartovaHra alloc] initWithPocetKariet:[self.tlacitkaKariet count]
+        pouzitimBalickahKariet:[[BalicekHracichKariet alloc] init]];
+    return _hra;
 }
 
-- (IBAction)otocKartu:(UIButton *)sender {
-    if(!sender.isSelected) {
-        Karta *tahanaKarta;
-        tahanaKarta = [balicek potiahniNahodnuKartu];
-        [sender setTitle:tahanaKarta.obsah forState:UIControlStateSelected];
+- (void)obnovUI {
+    for (UIButton *tlacitko in self.tlacitkaKariet) {
+        Karta *karta = [self.hra kartaNaIndexe:[self.tlacitkaKariet indexOfObject:tlacitko]];
+        [tlacitko setTitle:karta.obsah forState:UIControlStateSelected];
+        //[tlacitko setTitle:karta.obsah forState:UIControlStateSelected | UIControlStateDisabled];
+        tlacitko.selected = karta.otocenaCelnouStranou;
+        //tlacitko.enabled = !karta.hratelna;
+        tlacitko.alpha = (karta.nehratelna ? 0.3 : 1.0);
     }
-    sender.selected = !sender.isSelected;
+}
+
+- (void)setTlacitkaKariet:(NSArray *)tlacitkaKariet {
+    _tlacitkaKariet = tlacitkaKariet;
+    [self obnovUI];
+}
+
+- (IBAction)otocKartu:(UIButton *)tlacitko {
+    tlacitko.selected = !tlacitko.selected;
+    [self.hra otocKartuNaIndexe:[self.tlacitkaKariet indexOfObject:tlacitko]];
     self.pocetOtoceni++;
+    [self obnovUI];
 }
 
 -(void)setPocetOtoceni:(int)pocetOtoceni {

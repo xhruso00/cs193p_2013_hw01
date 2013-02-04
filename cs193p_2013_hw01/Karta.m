@@ -11,7 +11,7 @@
 @implementation Karta
 
 @synthesize obsah = _obsah;
-@synthesize hratelna = _hratelna;
+@synthesize nehratelna = _nehratelna;
 @synthesize otocenaCelnouStranou = _otocenaCelnouStranou;
 
 - (int)porovnajSKartami:(NSArray *)karty {

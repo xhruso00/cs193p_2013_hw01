@@ -29,6 +29,21 @@
     return @[@"?",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
 }
 
+- (int)porovnajSKartami:(NSArray *)ineKarty {
+    
+    int skore = 0;
+    
+    if ([ineKarty count] == 1) {
+        HraciaKarta *inaKarta = [ineKarty lastObject];
+        if ([inaKarta.farba isEqualToString:self.farba])
+            skore = 1;
+        else if (inaKarta.hodnota == self.hodnota)
+            skore = 4;
+    }
+        
+    return skore;
+}
+
 - (void)nastavFarbu:(NSString *)farba {
     if ([[HraciaKarta platneFarby] containsObject:farba])
         _farba = farba;

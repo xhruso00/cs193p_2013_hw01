@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "BalicekHracichKariet.h"
 #import "HraciaKarta.h"
+#import "PorovnavaciaKartovaHra.h"
 
 @interface ViewController : UIViewController {
 
-    BalicekHracichKariet *balicek;
+    BalicekHracichKariet *_balicek;
 
 }
 

@@ -14,9 +14,9 @@
 }
 
 @property (strong,nonatomic) NSString *obsah;
-@property (nonatomic) BOOL hratelna;
+@property (nonatomic) BOOL nehratelna;
 @property (nonatomic) BOOL otocenaCelnouStranou;
 
-- (int)porovnajSKartami:(NSArray *)karty;
+- (int)porovnajSKartami:(NSArray *)ineKarty;
 
 @end
