@@ -21,6 +21,20 @@
 
 @implementation ViewController
 
+- (IBAction)novaHra:(UIButton *)sender {
+    self.skorePopisok.text = @"Skore: 0";
+    self.pocetOtoceniPopisok.text = @"Pocet otoceni: 0";
+    self.pocetOtoceni = 0;
+    self.poslednyTahPopisok.text = @"";
+    for(UIButton *tlacitko in self.tlacitkaKariet) {
+        tlacitko.enabled = YES;
+        tlacitko.alpha = 1.0;
+        tlacitko.selected = NO;
+    }
+    _hra = nil;
+    [self obnovUI];
+}
+
 - (PorovnavaciaKartovaHra *)hra {
     if(!_hra) _hra = [[PorovnavaciaKartovaHra alloc] initWithPocetKariet:[self.tlacitkaKariet count]
         pouzitimBalickahKariet:[[BalicekHracichKariet alloc] init]];
