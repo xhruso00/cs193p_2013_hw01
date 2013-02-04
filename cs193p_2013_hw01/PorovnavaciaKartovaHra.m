@@ -11,6 +11,7 @@
 @interface PorovnavaciaKartovaHra()
 @property (readwrite,nonatomic) int skore;
 @property (strong,nonatomic) NSMutableArray *karty;
+@property (strong,nonatomic,readwrite) NSString *vysledokPoslednehoOtocenia;
 
 @end
 
@@ -39,7 +40,7 @@
 
 - (void)otocKartuNaIndexe:(NSUInteger)index {
     Karta *karta = [self kartaNaIndexe:index];
-    
+    self.vysledokPoslednehoOtocenia = @"";
     if ( karta && !karta.nehratelna) {
         if (!karta.otocenaCelnouStranou) {
             for (Karta *inaKarta in self.karty) {
@@ -50,10 +51,12 @@
                         karta.nehratelna = YES;
                         inaKarta.nehratelna = YES;
                         self.skore += porovnacieSkore * POROVNACI_BONUS;
+                        self.vysledokPoslednehoOtocenia = [NSString stringWithFormat:@"Zhoda %@ a %@ za %d body.",karta.obsah,inaKarta.obsah,porovnacieSkore * POROVNACI_BONUS];
                     }
                     else {
                         inaKarta.otocenaCelnouStranou = NO;
                         self.skore -= TREST_ZA_NEZHODU;
+                        self.vysledokPoslednehoOtocenia = [NSString stringWithFormat:@"%@ a %@ sa nezhoduju. %d trestne body",karta.obsah,inaKarta.obsah, TREST_ZA_NEZHODU];
                     }
                     break;
                 }
@@ -61,6 +64,8 @@
             self.skore -= CENA_ZA_OTOCENIE;
         }
         karta.otocenaCelnouStranou = !karta.otocenaCelnouStranou;
+        if(![self.vysledokPoslednehoOtocenia length])
+            self.vysledokPoslednehoOtocenia = [NSString stringWithFormat:@"Otocil si %@",karta.obsah];
     }
 }
 

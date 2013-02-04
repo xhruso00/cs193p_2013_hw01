@@ -14,6 +14,8 @@
 @property (nonatomic) int pocetOtoceni;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tlacitkaKariet;
 @property (strong,nonatomic) PorovnavaciaKartovaHra *hra;
+@property (weak, nonatomic) IBOutlet UILabel *skorePopisok;
+@property (weak, nonatomic) IBOutlet UILabel *poslednyTahPopisok;
 
 @end
 
@@ -33,6 +35,7 @@
         tlacitko.selected = karta.otocenaCelnouStranou;
         //tlacitko.enabled = !karta.hratelna;
         tlacitko.alpha = (karta.nehratelna ? 0.3 : 1.0);
+        self.poslednyTahPopisok.text = self.hra.vysledokPoslednehoOtocenia;
     }
 }
 
@@ -46,6 +49,7 @@
     [self.hra otocKartuNaIndexe:[self.tlacitkaKariet indexOfObject:tlacitko]];
     self.pocetOtoceni++;
     [self obnovUI];
+    self.skorePopisok.text = [NSString stringWithFormat:@"Skore: %d",self.hra.skore];
 }
 
 -(void)setPocetOtoceni:(int)pocetOtoceni {

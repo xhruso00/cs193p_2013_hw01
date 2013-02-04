@@ -13,6 +13,7 @@
 @interface PorovnavaciaKartovaHra : NSObject
 
 @property(readonly,nonatomic) int skore;
+@property (strong,nonatomic,readonly) NSString *vysledokPoslednehoOtocenia;
 
 - (id)initWithPocetKariet:(NSUInteger)pocetKariet
    pouzitimBalickahKariet:(BalicekKariet *) balicek;
