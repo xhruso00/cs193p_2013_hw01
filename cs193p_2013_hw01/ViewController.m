@@ -51,7 +51,7 @@
     for (UIButton *tlacitko in self.tlacitkaKariet) {
         Karta *karta = [self.hra kartaNaIndexe:[self.tlacitkaKariet indexOfObject:tlacitko]];
         [tlacitko setTitle:karta.obsah forState:UIControlStateSelected];
-        //[tlacitko setTitle:karta.obsah forState:UIControlStateSelected | UIControlStateDisabled];
+        [tlacitko setTitle:karta.obsah forState:UIControlStateSelected | UIControlStateDisabled];
         tlacitko.selected = karta.otocenaCelnouStranou;
         //tlacitko.enabled = !karta.hratelna;
         tlacitko.alpha = (karta.nehratelna ? 0.3 : 1.0);
@@ -63,6 +63,10 @@
 
 - (void)setTlacitkaKariet:(NSArray *)tlacitkaKariet {
     _tlacitkaKariet = tlacitkaKariet;
+    for (UIButton *tlacitko in _tlacitkaKariet) {
+        [tlacitko setBackgroundImage:nil forState:UIControlStateSelected | UIControlStateHighlighted | UIControlStateDisabled];
+        [tlacitko setBackgroundImage:[UIImage imageNamed:@"backFace.png"] forState:UIControlStateNormal];
+    }
     [self obnovUI];
 }
 
